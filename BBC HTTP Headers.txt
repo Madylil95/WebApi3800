@@ -1,0 +1,35 @@
+SOAP Request
+
+http://www.webservicex.net/geoipservice.asmxHTTP/1.1
+Accept-Encoding: gzip,deflate 
+	//The client sends an Accept-Encoding header to tell the server that it can save some
+	//bandwidth by compressing the response entity-body with a well-known algorithm like gzip.
+	//Similar to Accept, but restricts the acceptable content codings. 
+Content-Type: text/xml;charset = UTF-8
+	//Gives the media type of the entity-body. 
+SOAPAction: "http://www.webservicex.net/GetGeoIP"
+	// used to indicate the intent of the SOAP HTTP request. The value is a URI 
+	//identifying the intent. 
+Content-Length: 317
+	//The size of the entity-body in octets
+Host: www.webservicex.net
+	//Specifying the Internet host and port number of the resource
+Connection: Keep-Alive
+	//allows the sender to specify options that are desired for that particular
+	//conection and must not be communicated by proxies over further connections. 
+	//Keep-Alive: persistent connections, where the connections doesn't automatically close. 
+User-Agent: Apache-HttpClient/4.3.1 (java 1.5)
+	//this header lets the server know what kind of software is making the HTTP request
+
+SOAP Responses
+
+Cache-Control		private, max-age=0
+Server				Microsoft-IIS/7.0
+Content-Encoding	gzip
+X-AspNet-Version	4.0.30319
+Vary				Accept-Encoding
+#status#			HTTP/1.1 200 OK
+Content-Length		403
+Date				Sun, 14 Feb 2016 06:46:11 GMT
+Content-Type		text/xml; charset=utf-8
+X-Powered-By		ASP.NET
