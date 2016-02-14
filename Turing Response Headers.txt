@@ -1,0 +1,59 @@
+1) alt-svc --> quic=":443"; ma=604800; v="30,29,28,27,26,25"
+
+
+2) alternate-protocol --> 443:quic,p=1
+
+
+3) cache-control --> private, max-age=0, must-revalidate, no-transform
+	--> response header (can be request)
+	Tells all caching mechanisms from server to client whether they may cache this object. 
+	It is measured in seconds.
+
+4) content-encoding --> gzip
+	--> response header
+	The type of encoding used on the data. 
+	
+5) content-length --> 6771
+	--> reponse header
+	The length of the response body in octets. 
+	
+6) content-type --> application/json; charset=UTF-8
+	--> response header (can be request)
+	The mime type of the content. 
+	
+7) date --> Sun, 14 Feb 2016 05:12:58 GMT
+	--> response header (can be request)
+	Date and time the message was sent. 
+	
+8) etag --> "3z2GbiG39NRdo416x8jooTTBAqY/ro8nefc3FP6S22M9GgJWkl0KwyM"
+	--> response header
+	Identifier for a specific version of a resource. 
+	
+9) expires --> Sun, 14 Feb 2016 05:12:58 GMT
+	--> response header
+	The date and time, the response will be considered old or stale. 
+	
+10) server --> GSE
+	Naming the server. 
+	
+11) status --> 200
+	--> custom response header
+
+12) vary --> Origin, X-Origin
+	--> response header
+	Tells downstream proxies how to match future request headers to decide whether the 
+	cache response can be used rather than requesting a fresh one from the origin server. 
+	
+13) x-content-type-options --> nosniff
+	--> custom response header
+	Prevents Internet Explorer from MIME-sniffing a response away from the declared 
+	content-type. 
+	
+14) x-frame-options --> SAMEORIGIN
+	--> custom response header
+	Clickjacking protection: "deny" no rendering within a frame "sameorigin" no rendering 
+	if origin mismatch. 
+	
+15) x-xss-protection --> 1; mode=block
+	--> custom response header
+	Cross-site scripting (XSS) filter. 
