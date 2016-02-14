@@ -1,0 +1,30 @@
+{
+	"id": "26ca36f1-183e-b0f8-6d40-47c6b38bbeb0",
+	"name": "MyFirstCollection",
+	"requests": [
+		{
+			"id": "7dce5c90-02e5-1046-6ee4-f744f023c1da",
+			"headers": "",
+			"url": "https://www.googleapis.com/books/v1/volumes?q=turing",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "26ca36f1-183e-b0f8-6d40-47c6b38bbeb0",
+			"data": [],
+			"dataMode": "params",
+			"name": "Turing",
+			"description": "Asserting \"kind\" is in the responseBody\nAsserting a string match",
+			"descriptionFormat": "html",
+			"time": 1455435430260,
+			"version": 2,
+			"responses": [],
+			"tests": "var response = JSON.parse(responseBody); \ntests[\"Response contains ID element\"] = response.hasOwnProperty(\"kind\"); \n\ntests[\"Body matches string\"] = responseBody.has(\"Explores the life of the mathematician\"); ",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	],
+	"order": [
+		"7dce5c90-02e5-1046-6ee4-f744f023c1da"
+	],
+	"timestamp": 1455435430260
+}
