@@ -1,0 +1,68 @@
+{
+	"id": "1230c05f-d487-0807-a557-473fcbd20112",
+	"name": "HW3",
+	"description": "HW3 Web API\nSpring 2016",
+	"order": [
+		"6c70d01c-b562-435c-611b-157a9d27b1ef",
+		"b2f10d48-6e18-69b3-cb97-055450b31f2c"
+	],
+	"folders": [],
+	"timestamp": 1459206311440,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "6c70d01c-b562-435c-611b-157a9d27b1ef",
+			"headers": "",
+			"url": "https://madylil-test.apigee.net/oauth/client_credential/accesstoken?grant_type=client_credentials",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "r8UV8u1aAgkhUhtJbmyCRqIxjNTlsjMO",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "eb8yMVcLC3uxAb1I",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1459207204350,
+			"name": "https://madylil-test.apigee.net/oauth/client_credential/accesstoken?grant_type=client_credentials",
+			"description": "",
+			"collectionId": "1230c05f-d487-0807-a557-473fcbd20112",
+			"responses": []
+		},
+		{
+			"id": "b2f10d48-6e18-69b3-cb97-055450b31f2c",
+			"headers": "",
+			"url": "https://madylil-test.apigee.net/v1/firstproxy/Madylil95",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "1230c05f-d487-0807-a557-473fcbd20112",
+			"data": [],
+			"dataMode": "urlencoded",
+			"name": "https://madylil-test.apigee.net/v1/firstproxy/Madylil95",
+			"description": "First Proxy",
+			"descriptionFormat": "html",
+			"time": 1459211988155,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
