@@ -1,0 +1,92 @@
+{
+	"id": "79cb2be6-3297-41ec-f509-04030df0344e",
+	"name": "HW4",
+	"description": "",
+	"order": [
+		"ad2dbed9-e375-0ae0-f34d-d18304a6f02e",
+		"b4a52e4b-c011-acaa-5903-c7570c0fb3e9",
+		"cba9d169-500d-4825-abf0-ab918fc2e122"
+	],
+	"folders": [],
+	"timestamp": 1460418168971,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "ad2dbed9-e375-0ae0-f34d-d18304a6f02e",
+			"headers": "",
+			"url": "https://api.usergrid.com/madylil/sandbox/movies",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "79cb2be6-3297-41ec-f509-04030df0344e",
+			"data": [
+				{
+					"key": "",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://api.usergrid.com/madylil/sandbox/movies",
+			"description": "Simply accessing the Baas",
+			"descriptionFormat": "html",
+			"time": 1460418168970,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "b4a52e4b-c011-acaa-5903-c7570c0fb3e9",
+			"headers": "",
+			"url": "http://madylil-test.apigee.net/moviesprox/the orphanage",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "79cb2be6-3297-41ec-f509-04030df0344e",
+			"data": [
+				{
+					"key": "Rating",
+					"value": "6.6",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://madylil-test.apigee.net/moviesprox/the orphanage",
+			"description": "Accessing the BaaS through an API Proxy.",
+			"descriptionFormat": "html",
+			"time": 1460783339791,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "cba9d169-500d-4825-abf0-ab918fc2e122",
+			"headers": "",
+			"url": "http://madylil-test.apigee.net/moviesprox",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "79cb2be6-3297-41ec-f509-04030df0344e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://madylil-test.apigee.net/moviesprox",
+			"description": "Adds a new movie!",
+			"descriptionFormat": "html",
+			"time": 1460785600465,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"name\" : \"Cellular\",\n\"Actors\" : [\n    {\"firstName\" : \"Chris\", \"lastName\" : \"Evans\"}, \n    {\"firstName\" : \"Marilyn\", \"lastName\" : \"Mooney\"},\n    {\"firstName\" : \"Jason\" , \"lastName\" : \"Statham\"}\n    ],\n\"year\" : \"2004\"\n}"
+		}
+	]
+}
