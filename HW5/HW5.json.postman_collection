@@ -1,0 +1,173 @@
+{
+	"id": "a4f7c8a5-40d2-6f6b-5216-5bebbec86fbb",
+	"name": "HW5",
+	"description": "",
+	"order": [
+		"4e3c8338-2fe6-3344-a752-ed9e394c40ef",
+		"e4e88d4a-a80e-b384-b6a5-9c1d1586c40b",
+		"77f03bda-2078-fb7d-8b8d-94ee43104d3b",
+		"278b34e4-c321-6791-1717-e41c0fd17973",
+		"65511568-a221-7941-8cdc-e93b82886639",
+		"8b894559-ac2d-a58b-ba43-dbf67f374ee3"
+	],
+	"folders": [],
+	"timestamp": 1461800241022,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "278b34e4-c321-6791-1717-e41c0fd17973",
+			"headers": "",
+			"url": "https://api.usergrid.com/madylil/sandbox/movies/Zoolander/",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "Rating",
+					"value": "6.6",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1461801698060,
+			"name": "https://api.usergrid.com/madylil/sandbox/movies/Zoolander/has/reviews/Zoolander_R",
+			"description": "4) A REQUEST TO THE BaaS WHICH RETURNS A MOVIE (this request does not go through the proxy). \nShowing the Zoolander movie.",
+			"collectionId": "a4f7c8a5-40d2-6f6b-5216-5bebbec86fbb",
+			"responses": []
+		},
+		{
+			"id": "4e3c8338-2fe6-3344-a752-ed9e394c40ef",
+			"headers": "",
+			"url": "https://api.usergrid.com/madylil/sandbox/movies",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a4f7c8a5-40d2-6f6b-5216-5bebbec86fbb",
+			"data": [
+				{
+					"key": "Rating",
+					"value": "6.6",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://api.usergrid.com/madylil/sandbox/movies/Zoolander/has/reviews/Zoolander_R",
+			"description": "1) VALID REQUEST WITHOUT THE REVIEW QUERY PARAMETER\nShowing all movies",
+			"descriptionFormat": "html",
+			"time": 1461801752852,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "65511568-a221-7941-8cdc-e93b82886639",
+			"headers": "",
+			"url": "https://api.usergrid.com/madylil/sandbox/movies/Zoolander/has",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "Rating",
+					"value": "6.6",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1461995009505,
+			"name": "https://api.usergrid.com/madylil/sandbox/movies/Zoolander/has/reviews/Zoolander_R",
+			"description": "5) A REQUEST TO THE BaaS WHICH RETURNS A REVIEW (this request does not go through the proxy). \nShowing a Zoolander review. ",
+			"collectionId": "a4f7c8a5-40d2-6f6b-5216-5bebbec86fbb",
+			"responses": []
+		},
+		{
+			"id": "77f03bda-2078-fb7d-8b8d-94ee43104d3b",
+			"headers": "",
+			"url": "https://api.usergrid.com/madylil/sandbox/movies?review=true",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a4f7c8a5-40d2-6f6b-5216-5bebbec86fbb",
+			"data": [
+				{
+					"key": "Rating",
+					"value": "6.6",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://api.usergrid.com/madylil/sandbox/movies/Zoolander/has/reviews/Zoolander_R",
+			"description": "3) VALID REQUEST WITH REVIEW QUERY PARAMETER",
+			"descriptionFormat": "html",
+			"time": 1461994285506,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8b894559-ac2d-a58b-ba43-dbf67f374ee3",
+			"headers": "",
+			"url": "http://madylil-test.apigee.net/moviesprox/zoolander/has",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a4f7c8a5-40d2-6f6b-5216-5bebbec86fbb",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://madylil-test.apigee.net/moviesprox/zoolander/has",
+			"description": "Using proxy to show the review of Zoolander",
+			"descriptionFormat": "html",
+			"time": 1461801932917,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e4e88d4a-a80e-b384-b6a5-9c1d1586c40b",
+			"headers": "",
+			"url": "https://api.usergrid.com/madylil/sandbox/movies/DragonBallZ",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a4f7c8a5-40d2-6f6b-5216-5bebbec86fbb",
+			"data": [
+				{
+					"key": "Rating",
+					"value": "6.6",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "https://api.usergrid.com/madylil/sandbox/movies/Zoolander/has/reviews/Zoolander_R",
+			"description": "2) INVALID REQUEST (for movie not in the BaaS) WITHOUT THE REVIEW QUERY PARAMETER\n",
+			"descriptionFormat": "html",
+			"time": 1461994176225,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
